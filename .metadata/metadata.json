@@ -1,0 +1,10 @@
+﻿{
+	"name": "ZoeyMaps",
+	"id": "ZoeyMaps",
+	"version": "1.0",
+	"supported_game_version": "1.0.*",
+	"short_description": "Adds new map modes.",
+	"tags":	["UI"],
+	"relationships": [],
+	"game_custom_data":	{ }
+}
