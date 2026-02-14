@@ -7291,3 +7291,21 @@ MAPMODE_POPULATION_OF_SUB_CONTINENT_TT: "[sub_continent|e]: [ROOT.GetLocation.Ge
 
 mapmode_population_of_country_name: "Country Population"
 MAPMODE_POPULATION_OF_COUNTRY: "#T $mapmode_population_of_country_name$#!\n[countries|e] are colored depending on the combined [population|e] of all their [locations|e]."
+
+mapmode_province_has_iron_or_coal_name: "Province has Iron or Coal"
+MAPMODE_PROVINCE_HAS_IRON_OR_COAL: "#T $mapmode_province_has_iron_or_coal_name$#!\n[provinces|e] are colored if they contain at least one [location|e] producing [ShowGoodsName('iron')] or [ShowGoodsName('coal')]."
+
+mapmode_province_has_stone_or_clay_name: "Province has Stone or Clay"
+MAPMODE_PROVINCE_HAS_STONE_OR_CLAY: "#T $mapmode_province_has_stone_or_clay_name$#!\n[provinces|e] are colored if they contain at least one [location|e] producing [ShowGoodsName('stone')] or [ShowGoodsName('clay')]."
+
+mapmode_province_has_gold_or_silver_name: "Province has Gold or Silver"
+MAPMODE_PROVINCE_HAS_GOLD_OR_SILVER: "#T $mapmode_province_has_gold_or_silver_name$#!\n[provinces|e] are colored if they contain at least one [location|e] producing [ShowGoodsName('goods_gold')] or [ShowGoodsName('silver')]."
+
+mapmode_province_has_dyes_or_silk_name: "Province has Dyes or Silk"
+MAPMODE_PROVINCE_HAS_DYES_OR_SILK: "#T $mapmode_province_has_dyes_or_silk_name$#!\n[provinces|e] are colored if they contain at least one [location|e] producing [ShowGoodsName('dyes')] or [ShowGoodsName('silk')]."
+
+mapmode_province_has_cotton_or_wool_name: "Province has Cotton or Wool"
+MAPMODE_PROVINCE_HAS_COTTON_OR_WOOL: "#T $mapmode_province_has_cotton_or_wool_name$#!\n[provinces|e] are colored if they contain at least one [location|e] producing [ShowGoodsName('cotton')] or [ShowGoodsName('wool')]."
+
+mapmode_province_has_lumber_or_fiber_crops_name: "Province has Lumber or Fiber Crops"
+MAPMODE_PROVINCE_HAS_LUMBER_OR_FIBER_CROPS: "#T $mapmode_province_has_lumber_or_fiber_crops_name$#!\n[provinces|e] are colored if they contain at least one [location|e] producing [ShowGoodsName('lumber')] or [ShowGoodsName('fiber_crops')]."
