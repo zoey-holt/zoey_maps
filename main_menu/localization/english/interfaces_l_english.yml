@@ -7259,13 +7259,35 @@ UNIT_DEBUG_TOOLTIP: "#D DEBUG:#!\nID: [UNIT.GetID|Y]\nActivity: [UNIT.GetActivit
 WAR_DEBUG_TOOLTIP: "#D DEBUG:#!\nID: [WAR.GetID|Y]\nPotential Battle Locations: [WAR.GetPotentialBattleLocations]"
 
 mapmode_population_capacity_name: "Population Capacity"
-MAPMODE_POPULATION_CAPACITY: "#T $mapmode_population_capacity_name$#!\nEach [location|e] is colored from red to green depending on its [population_capacity|e] up to 1 million, while locations in shades of blue exceed 1 million capacity. Additionally, locations striped in black have already exceeded their capacity."
+MAPMODE_POPULATION_CAPACITY: "#T $mapmode_population_capacity_name$#!\n[locations|e] are colored from red to green depending on their [population_capacity|e] up to 1 million, while locations in shades of blue exceed 1 million capacity. Additionally, locations striped in black have a [population|e] exceeding their capacity."
 MAPMODE_POPULATION_CAPACITY_TT: "[ROOT.GetLocation.GetName] has a [population|e] of [ROOT.GetLocation.GetTotalPopulation|V]\n[ROOT.GetLocation.GetName] has a [population_capacity|e] of [ROOT.GetLocation.GetPopulationCapacity|V]\n\n[population_capacity|e] is due to:\n[ROOT.GetLocation.GetPopulationCapacityInfo]"
 
 mapmode_population_capacity_percentage_name: "Population Capacity Percentage"
-MAPMODE_POPULATION_CAPACITY_PERCENTAGE: "#T $mapmode_population_capacity_percentage_name$#!\nEach [location|e] is colored from green to red depending on its [population|e] divided by its [population_capacity|e]. Locations striped in blue are under 5% of their capacity, while locations striped in black are over 100% of their capacity."
+MAPMODE_POPULATION_CAPACITY_PERCENTAGE: "#T $mapmode_population_capacity_percentage_name$#!\n[locations|e] are colored from green to red depending on their [population|e] divided by their [population_capacity|e]. Locations striped in blue are under 5% of their capacity, while locations striped in black are over 100% of their capacity."
 MAPMODE_POPULATION_CAPACITY_PERCENTAGE_TT: "[ROOT.GetLocation.GetName] has a [population|e] of [ROOT.GetLocation.GetTotalPopulation|V]\n[ROOT.GetLocation.GetName] has a [population_capacity|e] of [ROOT.GetLocation.GetPopulationCapacity|V]\n\n[population_capacity|e] is due to:\n[ROOT.GetLocation.GetPopulationCapacityInfo]"
 
 mapmode_population_capacity_exceeded_name: "Overpopulation"
-MAPMODE_POPULATION_CAPACITY_EXCEEDED: "#T $mapmode_population_capacity_exceeded_name$#!\nEach [location|e] is colored from yellow to red to magenta depending on the degree of overpopulation. Yellow locations have a [population|e] only slightly above their [population_capacity|e], red locations may exceed their capacity by 50%, and magenta locations may exceed their capacity by over 1000%. Locations striped in gray exceed 90% of their capacity and are at risk of overpopulation in the future."
+MAPMODE_POPULATION_CAPACITY_EXCEEDED: "#T $mapmode_population_capacity_exceeded_name$#!\n[locations|e] are colored from yellow to red to magenta depending on their degree of overpopulation. Yellow locations have a [population|e] only slightly above their [population_capacity|e], red locations may exceed their capacity by 50%, and magenta locations may exceed their capacity by 1000%. Locations striped in gray exceed 90% of their capacity and are at risk of overpopulation in the future."
 MAPMODE_POPULATION_CAPACITY_EXCEEDED_TT: "[ROOT.GetLocation.GetName] has a [population|e] of [ROOT.GetLocation.GetTotalPopulation|V]\n[ROOT.GetLocation.GetName] has a [population_capacity|e] of [ROOT.GetLocation.GetPopulationCapacity|V]\n\n[population_capacity|e] is due to:\n[ROOT.GetLocation.GetPopulationCapacityInfo]"
+
+mapmode_population_no_migration_arrows_name: "Population (No Migration Arrows)"
+MAPMODE_POPULATION_NO_MIGRATION_ARROWS: "#T $mapmode_population_no_migration_arrows_name$#![locations|e] are colored depending on their [population|e] compared to the most populated location. Stripes indicate a location where the population exceeds its [population_capacity|e]."
+
+mapmode_population_of_province_name: "Province Population"
+MAPMODE_POPULATION_OF_PROVINCE: "#T $mapmode_population_of_province_name$#!\n[provinces|e] are colored depending on the combined [population|e] of all their [locations|e]."
+MAPMODE_POPULATION_OF_PROVINCE_TT: "[province|e]: [ROOT.GetLocation.GetProvinceDefinition.GetName|V]\n[population|e]: [ROOT.GetLocation.GetProvinceDefinition.GetTotalPopulation]\n[locations|e]: [ROOT.GetLocation.GetProvinceDefinition.GetNumLocations]\n[area|e]: [ROOT.GetLocation.GetArea.GetName]"
+
+mapmode_population_of_area_name: "Area Population"
+MAPMODE_POPULATION_OF_AREA: "#T $mapmode_population_of_area_name$#!\n[areas|e] are colored depending on the combined [population|e] of all their [locations|e]."
+MAPMODE_POPULATION_OF_AREA_TT: "[area|e]: [ROOT.GetLocation.GetArea.GetName|V]\n[population|e]: [ROOT.GetLocation.GetArea.GetTotalPopulation]\n[locations|e]: [ROOT.GetLocation.GetArea.GetNumLocations]\n[region|e]: [ROOT.GetLocation.GetRegion.GetName]"
+
+mapmode_population_of_region_name: "Region Population"
+MAPMODE_POPULATION_OF_REGION: "#T $mapmode_population_of_region_name$#!\n[regions|e] are colored depending on the combined [population|e] of all their [locations|e]."
+MAPMODE_POPULATION_OF_REGION_TT: "[region|e]: [ROOT.GetLocation.GetRegion.GetName|V]\n[population|e]: [ROOT.GetLocation.GetRegion.GetTotalPopulation]\n[areas|e]: [ROOT.GetLocation.GetRegion.GetNumAreas]\n[sub_continent|e]: [ROOT.GetLocation.GetSubContinent.GetName]"
+
+mapmode_population_of_sub_continent_name: "Subcontinent Population"
+MAPMODE_POPULATION_OF_SUB_CONTINENT: "#T $mapmode_population_of_sub_continent_name$#!\n[sub_continents|e] are colored depending on the combined [population|e] of all their [locations|e]."
+MAPMODE_POPULATION_OF_SUB_CONTINENT_TT: "[sub_continent|e]: [ROOT.GetLocation.GetSubContinent.GetName|V]\n[population|e]: [ROOT.GetLocation.GetSubContinent.GetTotalPopulation]\n[regions|e]: [ROOT.GetLocation.GetSubContinent.GetNumRegions]\n[continent|e]: [ROOT.GetLocation.GetContinent.GetName]"
+
+mapmode_population_of_country_name: "Country Population"
+MAPMODE_POPULATION_OF_COUNTRY: "#T $mapmode_population_of_country_name$#!\n[countries|e] are colored depending on the combined [population|e] of all their [locations|e]."
