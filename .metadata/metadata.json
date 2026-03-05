@@ -2,7 +2,7 @@
 	"name": "ZoeyMaps",
 	"id" : "",
 	"version": "1.0",
-	"supported_game_version": "1.0.*",
+	"supported_game_version": "1.1.*",
 	"short_description": "Adds new map modes.",
 	"tags":	[],
 	"picture": "thumbnail.png",
