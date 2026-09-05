@@ -1,4 +1,4 @@
-# Zoey Maps for Europa Univeralis V
+# Zoey Maps for Europa Universalis V
 
 This is a small map mode pack for Europa Univeralis V. Despite the plethora of map modes available in game, I always felt it was lacking a few key ones to show important data. Some ideas I had don't seem possible to mod, but these ones were.
 
